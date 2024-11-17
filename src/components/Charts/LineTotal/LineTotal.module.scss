@@ -1,0 +1,10 @@
+@use "@/styles/mixins.scss" as *;
+
+.wrapper {
+  @include card;
+  height: fit-content;
+  max-height: 350px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}

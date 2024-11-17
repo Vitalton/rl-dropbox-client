@@ -1,0 +1,50 @@
+@use "@/styles/variables.scss" as *;
+@use "@/styles/mixins.scss" as *;
+
+.effectivity {
+  @include card;
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  transition: all 1s ease-in-out;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  transition: all 0.4s ease-in-out;
+  @media (max-width: 575px) {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}
+
+.show {
+  height: fit-content;
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+}
+
+.hide {
+  height: 0;
+  visibility: collapse;
+  opacity: 0;
+  z-index: -1;
+}
+
+.btnDetail {
+  background-color: $body-bg-color;
+  border-radius: 50%;
+  color: #ffffff;
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+}

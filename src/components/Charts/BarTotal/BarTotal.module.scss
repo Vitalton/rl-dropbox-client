@@ -1,0 +1,13 @@
+@use "@/styles/mixins.scss" as *;
+
+.wrapper {
+  @include card;
+  max-height: 400px;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 1110px) {
+    max-width: 100%;
+  }
+}

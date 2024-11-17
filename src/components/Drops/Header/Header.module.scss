@@ -1,0 +1,26 @@
+@use "@/styles/mixins.scss" as *;
+
+.wrapper {
+  @include card;
+  width: 100%;
+  height: fit-content;
+  max-width: 300px;
+  max-height: 500px;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--chakra-colors-gray-900);
+  gap: 1rem;
+}
+
+.title {
+  text-decoration: wavy underline;
+  text-underline-offset: 5px;
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+  gap: 50px;
+  @media (max-width: 850px) {
+    gap: 20px;
+  }
+}

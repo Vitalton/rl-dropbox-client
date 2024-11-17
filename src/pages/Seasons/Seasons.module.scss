@@ -1,0 +1,38 @@
+@use "@/styles/variables.scss" as *;
+@use "@/styles/mixins.scss" as *;
+
+.wrapper {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.seasonsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.seasonCard {
+  @include card;
+  cursor: pointer;
+
+  & > .title {
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: underline;
+  }
+
+  & > .number {
+    font-weight: bold;
+    text-align: center;
+    font-size: 5rem;
+  }
+
+  & > .description {
+    text-align: center;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

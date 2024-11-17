@@ -1,0 +1,28 @@
+@use "@/styles/mixins.scss" as *;
+
+.wrapper {
+  @include card;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.contentWrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+
+  @media (min-width: 1850px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (max-width: 1350px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 950px) {
+    grid-template-columns: 1fr;
+  }
+}

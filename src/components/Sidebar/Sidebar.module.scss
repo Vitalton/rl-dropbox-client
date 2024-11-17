@@ -1,0 +1,41 @@
+@use "@/styles/variables.scss" as *;
+
+.navList {
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.navItem {
+  display: flex;
+  font-weight: bold;
+
+  &:hover {
+    cursor: pointer;
+
+    .navIcon {
+      color: var(--chakra-colors-gray-500);
+    }
+  }
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  &:hover {
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.navIcon {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.active {
+  .navIcon {
+    color: rgba(#008EB0, 1);
+  }
+}

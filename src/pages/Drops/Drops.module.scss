@@ -1,0 +1,31 @@
+@use "@/styles/variables.scss" as *;
+
+.wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  gap: 25px;
+}
+
+.btnWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.footer {
+  position: absolute;
+  bottom: -130px;
+  left: 0;
+  height: 130px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  border-top: 2px solid #fff;
+  padding-top: 1rem;
+}

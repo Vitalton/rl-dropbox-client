@@ -1,0 +1,39 @@
+@use "@/styles/variables.scss" as *;
+@use "@/styles/mixins.scss" as *;
+
+.wrapper {
+  @include card;
+  padding: 10px;
+  display: grid;
+  place-items: center;
+  grid-template-rows: 2fr 1fr;
+  max-height: 300px;
+  max-width: 15rem;
+  gap: 10px;
+  z-index: 20;
+
+  @media (max-width: 1050px) {
+    //grid-template-rows: 4fr 1fr;
+  }
+
+  & > img:hover {
+    cursor: pointer;
+  }
+
+}
+
+.inputField {
+  font-size: 1.5rem !important;
+
+  @media (min-width: 3500px) {
+    font-size: 4rem !important;
+  }
+
+  @media (max-width: 1050px) {
+    font-size: 2rem !important;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 1.3rem !important;
+  }
+}

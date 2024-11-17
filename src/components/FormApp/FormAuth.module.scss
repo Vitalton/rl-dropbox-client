@@ -1,0 +1,22 @@
+@use "@/styles/variables.scss" as *;
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.formBtnSubmit {
+  padding: 0.5rem 3rem;
+  margin: 0.75rem auto;
+  font-weight: normal;
+  color: $color-blue-semibold;
+  background: rgb(255, 255, 255);
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    background: var(--chakra-colors-blue-100);
+  }
+}
